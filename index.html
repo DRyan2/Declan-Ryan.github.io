@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- setting language, fonts, title -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+  /* ── colors for site (mostly navy, gold, cream ── */
     :root {
       --navy:    #0b1a2e;
       --navy2:   #122340;
@@ -30,7 +31,7 @@
       overflow-x: hidden;
     }
 
-    /* ── NAV ── */
+    /* ── nav bar at top to scroll down to section ── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -52,7 +53,7 @@
       letter-spacing: 0.04em;
       text-decoration: none;
     }
-
+/* ── CSS boxes with info ── */
     .nav-links {
       display: flex;
       gap: 40px;
@@ -85,7 +86,7 @@
     .nav-links a.active::after { width: 100%; }
     .nav-links a.active { color: var(--gold2); }
 
-    /* ── HERO ── */
+    /* ── full page cover at top of site w/ name and about me ── */
     #home {
       min-height: 100vh;
       background: var(--navy);
@@ -426,7 +427,7 @@
       transform: none;
     }
 
-    /* ── RESPONSIVE ── */
+    /* ── RESPONSIVE, sizing ── */
     @media (max-width: 640px) {
       nav { padding: 0 20px; }
       section { padding: 80px 24px; }
@@ -587,6 +588,11 @@
           📝 View on Google Docs
         </a>
       </div>
+      
+         <div class="resume-block reveal">
+        <div class="resume-block-title"> Contact Me</div>
+        <ul class="resume-list">
+          <li>Please contact me at dryan@browning.edu for any questions or concerns</li>
 
     </div>
   </section>
